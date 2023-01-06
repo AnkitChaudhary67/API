@@ -1,0 +1,21 @@
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Balance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% customers.forEach(customer => { %>
+      <tr>
+        <td><%= customer._id %></td>
+        <td><%= customer.name %></td>
+        <td><%= customer.email %></td>
+        <td><%= customer.balance %></td>
+      </tr>
+      <% }); %>
+    </tbody>
+  </table>
+  

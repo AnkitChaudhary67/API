@@ -1,0 +1,20 @@
+<table>
+    <thead>
+      <tr>
+        <th>Customer ID</th>
+        <th>Inventory ID</th>
+        <th>Item Name</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% orders.forEach(function(order) { %>
+        <tr>
+          <td><%= order.customer_id %></td>
+          <td><%= order.inventory_id %></td>
+          <td><%= order.item_name %></td>
+          <td><%= order.quantity %></td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
